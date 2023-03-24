@@ -20,7 +20,7 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container page-heder-cantainer">
         <nav class="page-nav">
           <a class="link logo" href="./index.html"
@@ -39,7 +39,7 @@
           </ul>
         </nav>
         <button class="burger-menu-btn js-open-menu" type="button">
-          <svg class="burger-menu-btn-icon" width="32" height="22">
+          <svg class="burger-menu-btn-icon" width="40" height="40">
             <use href="./images/sprite.svg#icon-menu-hamburger"></use>
           </svg>
         </button>
@@ -58,7 +58,7 @@
           </ul>
         </address>
       </div>
-    </header>
+    </header> -->
     <main>
       <!-- HERO -->
       <!-- <section class="hero">
@@ -74,7 +74,7 @@
         <h2 class="hidden-title">feature</h2>
         <div class="container">
           <ul class="list feature">
-            <li>
+            <li class="feature-item">
               <div class="svg">
                 <svg width="64px" height="64px">
                   <use href="./images/sprite.svg#icon-antenna"></use>
@@ -86,7 +86,7 @@
                 the perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="feature-item">
               <div class="svg">
                 <svg width="64px" height="64px">
                   <use href="./images/sprite.svg#icon-clock"></use>
@@ -98,7 +98,7 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="feature-item">
               <div class="svg">
                 <svg width="64px" height="64px">
                   <use href="./images/sprite.svg#icon-diagram"></use>
@@ -110,14 +110,14 @@
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="feature-item">
               <div class="svg">
                 <svg width="64px" height="64px">
                   <use href="./images/sprite.svg#icon-astronaut"></use>
                 </svg>
               </div>
               <h3 class="title">Technologies</h3>
-              <p class="text-theme-light">
+              <p class="text-theme-light-bottom">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -139,17 +139,33 @@
         </div>
       </section> -->
       <!-- TEAM -->
-      <!-- <section class="team">
+      <!-- <section class="team tablet-wrapper">
         <div class="container">
           <h2 class="caption">Our Team</h2>
           <ul class="list team-avatar">
             <li class="avatar">
-              <img
-                class="avatar-img"
-                src="./images/markguerrero.jpg"
-                width="264"
-                alt="mark guerrero"
-              />
+              <picture>
+                <source
+                  srcset="./images/markguerrero.jpg 1x, ./images/mark2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/markguerrero.jpg 1x, ./images/mark2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/markguerrero.jpg 1x, ./images/mark2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="avatar-img"
+                  src="./images/markguerrero.jpg"
+                  loading="lazy"
+                  alt="mark guerrero"
+                />
+              </picture>
               <div class="team-title">
                 <h3 class="title">Mark Guerrero</h3>
                 <p class="text-theme-light">Product Designer</p>
@@ -186,12 +202,26 @@
               </div>
             </li>
             <li class="avatar">
-              <img
-                class="avatar-img"
-                src="./images/tomford.jpg"
-                width="264"
-                alt="tom ford"
-              />
+              <picture>
+                <source
+                  srcset="./images/tomford.jpg 1x, ./images/tomford2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tomford.jpg 1x, ./images/tomford2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/tomford.jpg 1x, ./images/tomford2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="avatar-img"
+                  src="./images/tomford.jpg"
+                  width="264"
+                  alt="tom ford"
+                />
+              </picture>
               <div class="team-title">
                 <h3 class="title">Tom Ford</h3>
                 <p class="text-theme-light">Frontend Developer</p>
@@ -228,12 +258,35 @@
               </div>
             </li>
             <li class="avatar">
-              <img
-                class="avatar-img"
-                src="./images/camilagarcia.jpg"
-                width="264"
-                alt="camila garcia"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/camilagarcia.jpg   1x,
+                    ./images/camilagarcia2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/camilagarcia.jpg   1x,
+                    ./images/camilagarcia2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/camilagarcia.jpg   1x,
+                    ./images/camilagarcia2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="avatar-img"
+                  src="./images/camilagarcia.jpg"
+                  width="264"
+                  alt="camilagarcia"
+                />
+              </picture>
               <div class="team-title">
                 <h3 class="title">Camila Garcia</h3>
                 <p class="text-theme-light">Marketing</p>
@@ -270,12 +323,35 @@
               </div>
             </li>
             <li class="avatar">
-              <img
-                class="avatar-img"
-                src="./images/danielwilson.jpg"
-                width="264"
-                alt="daniel wilson"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/danielwilson.jpg   1x,
+                    ./images/danielwilson2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/danielwilson.jpg   1x,
+                    ./images/danielwilson2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/danielwilson.jpg   1x,
+                    ./images/danielwilson2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="avatar-img"
+                  src="./images/danielwilson.jpg"
+                  width="264"
+                  alt="daniel wilson"
+                />
+              </picture>
               <div class="team-title">
                 <h3 class="title">Daniel Wilson</h3>
                 <p class="text-theme-light">UI Designer</p>
@@ -313,8 +389,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="customers-section">
+      </section> -->
+      <!-- <section class="customers-section">
         <div class="container">
           <h2 class="caption">Customers</h2>
           <ul class="customers list">
@@ -371,7 +447,7 @@
       </section> -->
     </main>
     <!-- FOOTER -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-descr">
           <a class="link logo-light" href="./index.html"
@@ -435,7 +511,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <buttom type="button" class="modal-close-button" data-modal-close>
           <svg class="modal-btm-close-icon" width="8" height="8">
@@ -515,7 +591,7 @@
           <button type="submit" class="modal-form-submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <div class="mobile-menu js-menu-container">
       <buttom class="mobile-menu-btn-closed js-close-menu" type="button">
         <svg class="modal-btm-close-icon" width="8" height="8">
@@ -579,6 +655,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/mobile-menu.js"></script> -->
   </body>
 </html>
