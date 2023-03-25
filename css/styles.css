@@ -141,8 +141,8 @@ body {
 /* =======================/COMPONENTS=======================*/
 /* =======================HEADER=======================*/
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 12px;
+  padding-bottom: 11px;
   border-bottom: 1px solid var(--Subtle-backgrounds);
 }
 .page-nav {
@@ -298,10 +298,10 @@ body {
 .social-list-modal {
   display: flex;
   margin-top: 48px;
-  justify-content: space-around;
+  
 }
 .social-list-item-modal:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 56px;
 }
 
 .social-list-item-modal {
@@ -328,6 +328,11 @@ body {
     height: 4px;
     background-color: var(--Pressed-state-color);
     position: absolute;
+}
+.header {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--Subtle-backgrounds);
 }
   .page-heder-cantainer {
     display: flex;   
@@ -370,6 +375,11 @@ body {
 }
 }
 @media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--Subtle-backgrounds);
+}
   .page-nav {
     display: flex;
     align-items: center;
@@ -396,6 +406,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-left: 40px;
+    font-size: 16px;
     margin-bottom: 0;
     font-style: normal;
     line-height: 1.5;
@@ -546,8 +557,8 @@ body {
   padding-bottom: 96px;
 }
 @media screen and (min-width: 768px) {
-  .text-theme-light {
-    text-align: center;
+  .text-theme-light-feature {
+    text-align:start;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--Text-color);
@@ -624,7 +635,14 @@ body {
   justify-content: center;
   gap: 16px;
 }
-
+.title-team {
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--main-color-dark);
+}
 .social-list-link {
   margin-top: 8px;
   display: flex;
