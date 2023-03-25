@@ -293,6 +293,7 @@ body {
 .social-list-modal {
   display: flex;
   margin-top: 48px;
+  justify-content: space-around;
 }
 .social-list-item-modal:not(:last-child) {
   margin-right: 50px;
@@ -524,8 +525,8 @@ body {
 
 /* =======================/HERO=======================*/
 /* =======================FEATURE======================= */
-.feature-item {
-  /* flex-basis: 100%; */
+.feature-item:not(:last-child) {
+  margin-bottom: 72px;
 }
 .svg {
   display: none;
@@ -540,12 +541,26 @@ body {
   padding-bottom: 96px;
 }
 @media screen and (min-width: 768px) {
+  .text-theme-light {
+    text-align: start;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--Text-color);
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .section {
+    display: block;
+    padding-top: 96px;
+    padding-bottom: 0;
+  }
   .feature {
     display: flex;
     flex-wrap: wrap;
   }
   .feature-item {
     flex-basis: calc((100% - 24px) / 2);
+    margin-bottom: 0;
   }
   .title {
     margin-bottom: 8px;
@@ -661,8 +676,7 @@ body {
   }
   .team {
     display: flex;
-    flex-wrap: wrap;
-    padding: 96px;
+    flex-wrap: wrap;    
     background-color: var(--Light-color);
   }
   .team-avatar {
@@ -792,8 +806,7 @@ body {
   }
 }
 /* =========================FOOTER=============== */
-.footer-container {
-}
+
 .title-dark {
   font-size: 16px;
   line-height: calc(24 / 16);
