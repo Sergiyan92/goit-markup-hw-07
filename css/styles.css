@@ -264,8 +264,13 @@ body {
   font-size: 36px;
   line-height: calc(40 / 36);
   letter-spacing: 0.02em;
-  color: var(--main-color-dark);
+  color: var(--main-color-dark);  
 }
+.menu-modal:focus {
+  color: var(--Pressed-state-color);
+}
+
+
 
 .contact-modal {
   width: 353px;
@@ -653,8 +658,6 @@ body {
   padding-bottom: 32px;
 }
 
-.team-avatar {
-}
 
 .avatar {
   background-color: #fff;
@@ -772,13 +775,16 @@ body {
   .customers-link {
     width: 168px;
     height: 88px;
-    border: 1px solid rgba(142, 143, 153, 1);
-    transition: border var(--transition-duration);
+    border: 1px solid rgba(142, 143, 153, 1);    
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  .customers-link:hover,
+.customers-link:focus {
+  border: 1px solid var(--Pressed-state-color);
+}
 }
 
 @media screen and (min-width: 1200px) {
