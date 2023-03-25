@@ -542,7 +542,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .text-theme-light {
-    text-align: start;
+    text-align: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--Text-color);
@@ -569,11 +569,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
   }
-  .text-theme-light {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--Text-color);
-  }
+  
 }
 @media screen and (min-width: 1200px) {
   .svg {
